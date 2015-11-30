@@ -39,7 +39,7 @@
  */
 #define VAL_GPIO_LED_ODR            0xFFFFE7FF
 #define VAL_GPIO_LED_CRL            0x88388888      /*  PA7...PA0 */
-#define VAL_GPIO_LED_CRH            0x88811888      /* PA15...PA8 */
+#define VAL_GPIO_LED_CRH            0x888118B8      /* PA15...PA8 */
 
-#define RCC_ENR_IOP_EN      RCC_APB2ENR_IOPAEN
+#define RCC_ENR_IOP_EN      ( RCC_APB2ENR_IOPAEN | RCC_APB2ENR_AFIOEN )
 #define RCC_RSTR_IOP_RST    RCC_APB2RSTR_IOPARST
